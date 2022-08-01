@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    /* font-size: 20px; */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* NAVBAR */
+.navbar {
+    height: 8vh;
+}
+
+.collapse {
+    font-size: 20px;
+}
+
+.text-active {
+    color: #ff6000 !important;
+    font-weight: bold;
+}
+/* End-Navbar */
+
+
+/* CARD */
+.profile {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(79, 79, 79);
+    height: 70vh;
+    width: 160vh;
+    padding: 5px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.container1{
+    flex: 70%;
+    margin-right: 50px;
+    padding-left: 90px;
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+.profile .contact-btn {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 15px;
+    background: #34353E;
+    cursor: pointer;
+}
+
+.download {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    }
+
+.fa-download {
+    margin-left: 5px;
+    color: black;
+    display: inline-block;
+}
+
+.sosmed {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+    align-items: center;
+}
+
+.sosmed > a {
+    text-decoration: none;
+    color: #34353E;
+    width: 30px;
+    height: 10px;
+    margin: 5px 0px;
+    padding: 15px;
+}
+
+.container2 {
+    flex: 30%;
+    margin: auto;
+    position: relative;
+}
+
+.card {
+    margin: 20px 50px 20px 10px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.card img {
+    margin: auto;
+    max-width: 100%;
+    object-fit: scale-down;
+    border-radius: 20px;
+}
+
+.data h4 {
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
+/* End-Card */
+
+
+/* CONTACT-ME */
+.contact {
+    height: 92vh;
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+}
+
+.contact-me h3 {
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+/* End Contact-me */
+
+
+/* PROJECT */
+.project {
+    height: 92vh;
+    width: 400px;
+    margin: auto;
+    justify-content: center;    
+}
+
+.project h3 {
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* End-project */
+
+
+/* PROJECT-DETAIL */
+.project-detail {
+    width: 80%;
+    margin: auto;
+}
+
+.project-detail h2 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.project-duration .duration {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* End Project-detail */
+
+/* Blog list */
+.blog-list {
+    margin: 80px auto;
+    width: 80%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.blog-list .blog-list-item {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+}
+
+.blog-list .blog-list-item .blog-image {
+    flex: 1;
+}
+
+.blog-list .blog-list-item .blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-list .blog-list-item .blog-content {
+    padding-left: 20px;
+    flex: 2;
+}
+
+.blog-list .button-group {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.blog-list .button-group .btn-edit {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #dbdbdb;
+    color: inherit;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.blog-list .button-group .btn-post {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #ff6000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog-list h1 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.blog-list .detail-blog-content {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.blog-list .blog-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}

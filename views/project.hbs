@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/public/assets/logo.png">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Add Project</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container font-">
+                <a class="navbar-brand" href="/"><img src="/public/assets/logo.png" alt="logo"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white ms-2" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white ms-2 text-active" aria-current="page" href="">Project</a>
+                    </li>
+                </ul>
+                <a href="/contact-me" class="btn text-white" style="background-color: #ff6000;">Contact me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Blog list -->
+        <div id='contents' class='blog-list'>
+
+        {{#if isLogin}}
+            <div class="text-end">
+            <a href="/add-project" class='btn btn-post text-white mb-4' style="background-color: #ff6000;">Add New Blog</a>
+            </div>
+        {{/if}}
+
+        <!-- dynamic content would be here -->
+        <div class='blog-list-item'>
+            <div class='blog-image'>
+            <img
+                src='/public/assets/blog-img-details.png'
+                alt='Pasar Coding di Indonesia Dinilai Masih Menjanjikan'
+            />
+            </div>
+            <div class='blog-content'>
+                {{!-- {{#if isLogin}} --}}
+                <div class='button-group'>
+                    <a class='btn-edit'>Edit Post</a>
+                    <a class='btn-post'>Delete Blog</a>
+                </div>
+                {{!-- {{/if}} --}}
+            <h1>
+                <a href='/project-detail/pasar-coding' target='_blank'>
+                Can Remote Desktop Protocol Be Hacked?
+                </a>
+            </h1>
+            <div class='detail-blog-content'>
+                12 Jul 2021 22:30 WIB | Faris Afdhil Fawwaz
+            </div>
+            <p>
+                Remote Desktop Protocol (RDP) is a kind of software that allows 
+                individuals to use a given desktop from a remote location. There are 
+                various kinds of RDP software out there, such as ISL Online and Splashtop,
+                but all share the same purpose of giving users the ability to view and control 
+                desktops without physically interacting with it.
+            </p>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- End-Project -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
